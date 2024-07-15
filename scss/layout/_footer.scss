@@ -1,0 +1,135 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: var(--background-color-secondary);
+  padding: 119px 15px 65px;
+
+  &__logo {
+    @include font(400, 38px, 60.4px);
+    margin-bottom: 119px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 364px;
+  }
+
+  &-navigation,
+  &-policy,
+  &-address {
+    margin-bottom: 198px;
+  }
+
+  &-navigation__list,
+  &-policy__list,
+  &-address__list,
+  &-careers__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &-navigation__text,
+  &-policy__text,
+  &-address__text,
+  &-careers__text {
+    font-style: normal;
+    @include font(400, 28px, 44.5px);
+    margin-bottom: 60px;
+  }
+
+  &-navigation__link,
+  &-policy__link,
+  &-address__link,
+  &-careers__link {
+    color: var(--main-color);
+    @include font(600, 18px, 27px);
+    font-family: var(--secondary-font);
+  }
+
+  &-address,
+  &-careers {
+    padding-inline: 50px;
+  }
+
+  &-address__list {
+    align-items: flex-start;
+  }
+
+  &-address__text {
+    align-self: center;
+  }
+
+  &-address__item-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &-address-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-careers__list {
+    gap: 28px;
+  }
+
+  &-careers__note {
+    text-align: center;
+    @include font(600, 18px, 27px);
+    font-family: var(--secondary-font);
+  }
+
+  &__rights {
+    @include font(400, 18px, 28.6px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 86px 91px 72px;
+    &__container {
+      flex-direction: row;
+      margin-bottom: 208px;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    &__container > * {
+      flex: 1;
+    }
+    &__container > &-address,
+    &__container > &-careers {
+      flex: 2;
+    }
+    &-address,
+    &-careers {
+      padding-inline: 0px;
+    }
+    &-navigation,
+    &-policy,
+    &-address {
+      margin-bottom: 0px;
+    }
+    &-navigation__list,
+    &-policy__list,
+    &-address__list,
+    &-careers__list {
+      align-items: flex-start;
+    }
+    &-careers__note {
+      text-align: start;
+    }
+    &-address__text {
+      align-self: flex-start;
+    }
+  }
+}

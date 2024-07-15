@@ -1,9 +1,420 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Secure Nexus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <a class="header__logo logo" href="#">Secure Nexus</a>
+
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#home" class="navigation__link link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link link">About Us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#services" class="navigation__link link">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#resource" class="navigation__link link">Resource</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="header__button-wrapper">
+            <button type="button" class="header__icon-button" data-menu-button>
+              <svg class="header__icon">
+                <use
+                  class="icon-burger"
+                  href="./images/sprite.svg#icon-burger"
+                ></use>
+                <use
+                  class="icon-close"
+                  href="./images/sprite.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+
+            <button type="button" class="header__button button">
+              Get Protection Now
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="home" id="home">
+          <div class="home__container">
+            <h2 class="home__title title">
+              Empowering Your Digital World with Advanced Security Solutions
+            </h2>
+            <p class="home__text text">
+              Discover unparalleled protection with Secure Nexus, your partners
+              in defending against cyber threats and enhancing your operational
+              integrity.
+            </p>
+            <img
+              class="home__image"
+              src="./images/header-1.png"
+              alt="Secure Nexus"
+            />
+            <div class="home__button_wrapper">
+              <button type="button" class="home__button button">
+                Learn More
+              </button>
+              <button type="button" class="home__button button">
+                Get Started
+              </button>
+            </div>
+          </div>
+
+          <div class="advantages">
+            <div class="advantages__container">
+              <div class="advantages__wrapper">
+                <div class="advantages__ellipse"></div>
+                <p class="advantages__text">Comprehensive Security Audit</p>
+              </div>
+            </div>
+            <div class="advantages__container">
+              <div class="advantages__wrapper">
+                <div class="advantages__ellipse"></div>
+                <p class="advantages__text">Real-Time Threat Monitoring</p>
+              </div>
+            </div>
+            <div class="advantages__container">
+              <div class="advantages__wrapper">
+                <div class="advantages__ellipse"></div>
+                <p class="advantages__text">
+                  Cutting-Edge Cyber Defense Technologies
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon-wrapper features__icon-wrapper--blue">
+                <svg class="features__icon">
+                  <use href="./images/sprite.svg#icon-cart"></use>
+                </svg>
+              </div>
+              <div class="features__box">
+                <span class="features__point">4K+</span>
+                <p class="features__text">Cyber Security Project</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-wrapper features__icon-wrapper--green">
+                <svg class="features__icon">
+                  <use href="./images/sprite.svg#icon-file-1"></use>
+                </svg>
+              </div>
+              <div class="features__box">
+                <span class="features__point">100k+</span>
+                <p class="features__text">Customer Globally</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-wrapper features__icon-wrapper--red">
+                <svg class="features__icon">
+                  <use href="./images/sprite.svg#icon-dollar"></use>
+                </svg>
+              </div>
+              <div class="features__box">
+                <span class="features__point">350+</span>
+                <p class="features__text">Cyber Security Expert</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div
+                class="features__icon-wrapper features__icon-wrapper--purple"
+              >
+                <svg class="features__icon">
+                  <use href="./images/sprite.svg#icon-file-2"></use>
+                </svg>
+              </div>
+              <div class="features__box">
+                <span class="features__point">100%</span>
+                <p class="features__text">Client Retention Rate</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about" id="about">
+          <h2 class="about__title title">
+            Leading the Way in Cybersecurity Innovation
+          </h2>
+          <p class="about__text text">
+            With decades of expertise and a relentless pursuit of excellence, we
+            deliver security solutions designed to protect multinational
+            corporations and small businesses alike
+          </p>
+          <div class="about__rectangle"></div>
+          <p class="about__text text">
+            At Secure Nexus/Guardian Tech, we understand the complexity of
+            cybersecurity challenges that businesses face today. Our team of
+            experts is committed to providing state-of-the-art solutions
+            tailored to your specific needs, ensuring robust protection and
+            peace of mind.
+          </p>
+          <button type="button" class="about__button button">Read More</button>
+        </section>
+
+        <section class="services" id="services">
+          <h2 class="services__title title">
+            Our Comprehensive Range of Cybersecurity Services
+          </h2>
+          <p class="services__text text">
+            From audits to full-scale security management, our services cover
+            all aspects of cyber protection to keep your data safe and your
+            business secure
+          </p>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__item-container">
+                <div class="services__item-ellipse"></div>
+                <h3 class="services__title title">Risk Assessment</h3>
+                <p class="services__text services__text-mb text">
+                  Proactively identify vulnerabilities and threats before they
+                  become problems.
+                </p>
+                <a class="services__item-link">
+                  <span class="services__item-point">Learn More</span>
+                  <svg class="services__item-icon">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="services__item-container">
+                <div class="services__item-ellipse"></div>
+                <h3 class="services__title title">Incident Response</h3>
+                <p class="services__text services__text-mb text">
+                  Rapid and effective action to mitigate the effects of security
+                  breaches.
+                </p>
+                <a class="services__item-link">
+                  <span class="services__item-point">Learn More</span>
+                  <svg class="services__item-icon">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="services__item-container">
+                <div class="services__item-ellipse"></div>
+                <h3 class="services__title title">Compliance Solutions</h3>
+                <p class="services__text services__text-mb text">
+                  Ensure your business meets all regulatory and compliance
+                  requirements for cybersecurity.
+                </p>
+                <a class="services__item-link">
+                  <span class="services__item-point">Learn More</span>
+                  <svg class="services__item-icon">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resource" id="resource">
+          <div class="resource__content">
+            <div class="resource__wrapper">
+              <h2 class="resource__title title">
+                Explore Our Rich Library of Cybersecurity Resources
+              </h2>
+              <p class="resource__text text">
+                Enhance your knowledge with our curated content featuring best
+                practices, case studies, and the latest industry insights
+              </p>
+            </div>
+            <ul class="resource__list">
+              <li class="resource__item">
+                <div class="resource__ellipse"></div>
+                <a class="resource__link">E-books</a>
+              </li>
+              <li class="resource__item">
+                <div class="resource__ellipse"></div>
+                <a class="resource__link">Webinars</a>
+              </li>
+              <li class="resource__item">
+                <div class="resource__ellipse"></div>
+                <a class="resource__link">Blog Articles</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2 class="contact__title title">
+            Connect With Our Cybersecurity Experts Today
+          </h2>
+          <p class="contact__text text">
+            Ready to protect your business? Get in touch with us to discuss your
+            cybersecurity needs and discover how our tailored solutions can
+            bolster your defenses
+          </p>
+          <div class="contact__ellipse"></div>
+          <form action="#" class="contact__form">
+            <label for="user-name" class="contact__form-field">
+              <input
+                type="text"
+                name="user-name"
+                placeholder="Name"
+                class="contact__form-input"
+              />
+            </label>
+            <label for="user-email" class="contact__form-field">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="Email"
+                class="contact__form-input"
+              />
+            </label>
+            <label for="user-message" class="contact__form-field">
+              <textarea
+                name="user-message"
+                placeholder="Message"
+                class="contact__form-input contact__form-message"
+              ></textarea>
+            </label>
+            <button type="submit" class="contact__button button">
+              Send Message
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <a class="footer__logo logo" href="#">Secure Nexus</a>
+        <div class="footer__container">
+          <div class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <p class="footer-navigation__text">Quick Links</p>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link link" href="#about">
+                  About Us
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link link" href="#resource">
+                  Resources
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link link" href="#contact">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-policy">
+            <ul class="footer-policy__list">
+              <p class="footer-policy__text">Legal</p>
+              <li class="footer-policy__item">
+                <a class="footer-policy__link link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="footer-policy__item">
+                <a class="footer-policy__link link" href="#">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="footer-policy__item">
+                <a class="footer-policy__link link" href="#"> Compliance </a>
+              </li>
+            </ul>
+          </div>
+          <address class="footer-address">
+            <ul class="footer-address__list">
+              <p class="footer-address__text">Company Information</p>
+              <li class="footer-address__item">
+                <div class="footer-address__item-box">
+                  <svg class="footer-address-icon">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel:+1800SECURE" class="footer-address__link link"
+                    >+1-800-SECURE</a
+                  >
+                </div>
+              </li>
+              <li class="footer-address__item">
+                <div class="footer-address__item-box">
+                  <svg class="footer-address-icon">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a
+                    href="mailto:contact@guardiantech.com"
+                    class="footer-address__link link"
+                    >contact@guardiantech.com</a
+                  >
+                </div>
+              </li>
+              <li class="footer-address__item">
+                <div class="footer-address__item-box">
+                  <svg class="footer-address-icon">
+                    <use href="./images/sprite.svg#icon-pin"></use>
+                  </svg>
+                  <a
+                    class="footer-address__link link"
+                    href="https://maps.app.goo.gl/MBYyVRSRSfuWCxt97"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >123 Cyber Lane, Tech City, IN 46000, United States</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </address>
+          <div class="footer-careers">
+            <ul class="footer-careers__list">
+              <p class="footer-careers__text">Careers</p>
+              <li class="footer-careers__item">
+                <a class="footer-careers__link link" href="#">
+                  Join Our Team
+                </a>
+              </li>
+              <li class="footer-careers__item">
+                <p class="footer-careers__note">
+                  Interested in making a difference in cybersecurity? Visit our
+                  Careers page to see available opportunities and become a part
+                  of our innovative team
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__rights">© 2024 Secure Nexus. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>

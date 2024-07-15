@@ -1,0 +1,7 @@
+.text {
+  @include font(400, 18px, 27px);
+  font-family: var(--secondary-font);
+  @media screen and (min-width: 1200px) {
+    @include font(400, 24px, 36px);
+  }
+}

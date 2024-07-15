@@ -1,0 +1,33 @@
+.button {
+  font-family: var(--main-font);
+  background: linear-gradient(90deg, #3b34a1, #e1400f);
+  border: none;
+  color: var(--main-color);
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+  transition:
+    background 0.3s,
+    color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #3b34a1, #e1400f) 1;
+    transition: border-color 0.3s;
+  }
+
+  &:hover {
+    background: transparent;
+    color: var(--main-color);
+  }
+
+  &:hover::before {
+    border-color: currentColor;
+  }
+}
